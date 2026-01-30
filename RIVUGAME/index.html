@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RivuPlayz | Gaming Portfolio</title>
+    <meta name="description"
+        content="Official gaming portfolio of RivuPlayz - PUBG/BGMI & Minecraft enthusiast. Check out my IDs and gaming journey.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="pfp_youtube.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="pfp_youtube.jpg">
+    <link rel="apple-touch-icon" href="pfp_youtube.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="custom-cursor"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Mobile HUD Elements -->
+    <div class="mobile-hud-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="close-menu-btn">&times;</div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#games">GAMES</a></li>
+            <li><a href="#social">SOCIAL</a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <div class="logo">Rivu<span>Playz</span></div>
+        <ul class="nav-links reveal-stagger">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#social">Social</a></li>
+        </ul>
+        <div class="mobile-menu-btn"><span></span></div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero premium-dashboard">
+            <div class="hero-overlay"></div>
+            <div class="dashboard-hub">
+                <div class="dash-sidebar">
+                    <div class="profile-card">
+                        <div class="premium-pfp-wrapper">
+                            <img src="pfp.jpg" alt="RIVU" class="dash-pfp">
+                            <div class="verified-badge" title="Verified Gamer Account">✓</div>
+                        </div>
+                        <h1 class="dash-name">Rivu<span>Playz</span></h1>
+                        <p class="dash-rank">LEGENDARY ACHIEVER</p>
+                        <p class="typewriter-container">> <span id="typewriter"></span><span
+                                class="cursor-blink">|</span></p>
+                        <h2 class="reveal-text">WELCOME <span>STRANGER</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section glass-section">
+            <h2 class="section-title">WHO IS <span>RIVU?</span></h2>
+            <div class="about-container">
+                <div class="about-visual reveal">
+                    <div class="mascot-wrapper cyber-scan">
+                        <img src="ai_brand_logo.png" alt="Rivu Mascot" class="mascot-img">
+                        <div class="mascot-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>Welcome to my digital universe. I'm a passionate gamer, strategist, and anime enthusiast from
+                        West Bengal. My journey started with craft and blocks in Minecraft, evolved into tactical squad
+                        play in BGMI, and now spans across some of the most competitive arenas in the gaming world.</p>
+                    <p>When I'm not leading my clan in CoC or strategizing my next move, you'll find me exploring the
+                        latest anime masterpieces. For me, gaming isn't just a hobby—it's about community, strategy, and
+                        pushing limits.</p>
+                </div>
+                <div class="about-stats reveal-stagger">
+                    <div class="stat-item cyber-scan">
+                        <span class="stat-number count-up" data-target="5" data-suffix="+">0</span>
+                        <span class="stat-label">Years Gaming</span>
+                    </div>
+                    <div class="stat-item cyber-scan">
+                        <span class="stat-number count-up" data-target="10" data-suffix="k+">0</span>
+                        <span class="stat-label">Squad Wipes</span>
+                    </div>
+                    <div class="stat-item cyber-scan">
+                        <span class="stat-number count-up" data-target="100" data-suffix=" (Elite)"
+                            data-prefix="LVL ">0</span>
+                        <span class="stat-label">Clan Leader</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GAMING DNA EXPANSION -->
+            <div class="gaming-dna reveal-stagger">
+                <div class="dna-card cyber-scan">
+                    <div class="dna-icon">🎯</div>
+                    <h3>THE FRAGGER</h3>
+                    <p>High-precision aim and aggressive entry play. I don't just find targets; I eliminate them.</p>
+                </div>
+                <div class="dna-card cyber-scan">
+                    <div class="dna-icon">🧠</div>
+                    <h3>THE STRATEGIST</h3>
+                    <p>Mastering the meta. From clan wars to tactical decision-making, every move is calculated.</p>
+                </div>
+                <div class="dna-card cyber-scan">
+                    <div class="dna-icon">🧱</div>
+                    <h3>THE BUILDER</h3>
+                    <p>Whether it's a Minecraft megastructure or a Maxed COC base, I build for the future.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="games" class="section">
+            <h2 class="section-title reveal">MY <span>UNIVERSE</span></h2>
+            <div class="games-grid reveal-stagger">
+                <!-- ANIME -->
+                <div class="game-card" data-tilt>
+                    <div class="card-img">
+                        <img src="ai_anime.png" alt="Anime">
+                    </div>
+                    <div class="card-content">
+                        <h3>ANIME LOVE</h3>
+                        <p>Deeply into the world of Japanese animation. Always looking for the next masterpiece.</p>
+                    </div>
+                </div>
+                <!-- BGMI / PUBG -->
+                <div class="game-card" data-tilt>
+                    <div class="card-img">
+                        <img src="pubg_card_webp_1769714069021.png" alt="BGMI / PUBG">
+                    </div>
+                    <div class="card-content">
+                        <h3>BGMI / PUBG</h3>
+                        <p>The battlegrounds are my home. Tactical plays and squad wipes.</p>
+                        <div class="reveal-hint">Click to reveal ID</div>
+                        <div class="id-wrapper">
+                            <p class="card-id">MAIN: 55520629544 </p>
+                            <button class="copy-btn mini" onclick="copyID('55520629544')">COPY</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- MINECRAFT -->
+                <div class="game-card" data-tilt>
+                    <div class="card-img">
+                        <img src="minecraft_card_webp_1769714088772.png" alt="Minecraft">
+                    </div>
+                    <div class="card-content">
+                        <h3>MINECRAFT</h3>
+                        <p>Building dreams and surviving nightmares. From redstone builds to survival adventures.</p>
+                        <div class="reveal-hint">Click to reveal ID</div>
+                        <div class="id-wrapper">
+                            <p class="card-id">IGN: RIVU_PLAYZ</p>
+                            <button class="copy-btn mini" onclick="copyID('RIVU_PLAYZ')">COPY</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- COC -->
+                <div class="game-card" data-tilt>
+                    <div class="card-img">
+                        <img src="ai_coc.png" alt="Clash of Clans">
+                    </div>
+                    <div class="card-content">
+                        <h3>CLASH OF CLANS</h3>
+                        <p>Strategist and clan leader. Building the ultimate base and dominating in war.</p>
+                        <div class="reveal-hint">Click to reveal ID</div>
+                        <div class="id-wrapper">
+                            <p class="card-id">MAIN: #LU000RQR2 | RUSH: #Q29RPL0QJ</p>
+                            <button class="copy-btn mini" onclick="copyID('#LU000RQR2')">COPY</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- VALORANT -->
+                <div class="game-card" data-tilt>
+                    <div class="card-img">
+                        <img src="ai_valorant.png" alt="Valorant">
+                    </div>
+                    <div class="card-content">
+                        <h3>VALORANT</h3>
+                        <p>Mastering precision and ability play. Strategy meets aim in the tactical grind.</p>
+                    </div>
+                </div>
+                <!-- ASPHALT 9 -->
+                <div class="game-card" data-tilt>
+                    <div class="card-img full-view">
+                        <img src="ai_asphalt9.png" alt="Asphalt 9">
+                    </div>
+                    <div class="card-content">
+                        <h3>ASPHALT 9</h3>
+                        <p>High-speed arcade racing. Mastering the tracks with nitro-fueled precision.</p>
+                    </div>
+                </div>
+                <!-- ROBLOX -->
+                <div class="game-card cyber-scan" data-tilt>
+                    <div class="card-img">
+                        <img src="ai_roblox.png" alt="Roblox">
+                    </div>
+                    <div class="card-content">
+                        <h3>ROBLOX</h3>
+                        <p>Exploring endless metaverses. Find me as RIVU799.</p>
+                        <div class="reveal-hint">Click to reveal ID</div>
+                        <div class="id-wrapper">
+                            <p class="card-id">ID: RIVU799</p>
+                            <button class="copy-btn mini" onclick="copyID('RIVU799')">COPY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social" class="section glass-section">
+            <h2 class="section-title reveal">SOCIAL <span>MEDIA</span></h2>
+            <div class="ids-container reveal-stagger">
+                <!-- INSTAGRAM GAMING -->
+                <a href="https://www.instagram.com/rivu_bro?igsh=YTl5NnZzMHp0NjZm" target="_blank"
+                    class="id-card social-card instagram-card">
+                    <div class="pfp-container">
+                        <img src="pfp_insta_gaming.jpg" alt="PFP" class="social-pfp" style="display: block;">
+                    </div>
+                    <div class="id-details">
+                        <h4>Gaming Instagram</h4>
+                        <p class="id-value">@rivu_bro</p>
+                    </div>
+                    <div class="follow-hint">Follow</div>
+                </a>
+
+                <!-- INSTAGRAM PERSONAL (HIDDEN EASTER EGG) -->
+                <a id="personal-insta-egg"
+                    href="https://www.instagram.com/username_not_found_v.2.3?igsh=NXZkeXY0ZDQ5bHd3" target="_blank"
+                    class="id-card social-card instagram-card easter-egg-hidden">
+                    <div class="pfp-container">
+                        <img src="pfp_insta_personal.jpg" alt="PFP" class="social-pfp" style="display: block;">
+                    </div>
+                    <div class="id-details">
+                        <h4>Personal Instagram</h4>
+                        <p class="id-value">@some_thing</p>
+                    </div>
+                    <div class="follow-hint">Secret Found</div>
+                </a>
+
+                <!-- YOUTUBE -->
+                <a href="https://www.youtube.com/@rivu_bro?sub_confirmation=1" target="_blank"
+                    class="id-card social-card youtube-card">
+                    <div class="pfp-container">
+                        <img src="pfp_youtube.jpg" alt="PFP" class="social-pfp" style="display: block;">
+                    </div>
+                    <div class="id-details">
+                        <h4>YouTube</h4>
+                        <p class="id-value">@rivu_bro</p>
+                    </div>
+                    <div class="follow-hint">Subscribe</div>
+                </a>
+
+                <!-- TWITTER / X -->
+                <a href="https://twitter.com/intent/follow?screen_name=theravengod5" target="_blank"
+                    class="id-card social-card twitter-card">
+                    <div class="pfp-container">
+                        <img src="pfp_youtube.jpg" alt="PFP" class="social-pfp" style="display: block;">
+                    </div>
+                    <div class="id-details">
+                        <h4>Twitter / X</h4>
+                        <p class="id-value">@theravengod5</p>
+                    </div>
+                    <div class="follow-hint">Follow</div>
+                </a>
+
+                <!-- DISCORD ACCOUNT -->
+                <a href="https://discord.com/users/1054727283685982248" target="_blank"
+                    class="id-card social-card discord-card">
+                    <div class="pfp-container">
+                        <img src="pfp_discord.jpg" alt="PFP" class="social-pfp" style="display: block;">
+                    </div>
+                    <div class="id-details">
+                        <h4>Discord Account</h4>
+                        <p class="id-value">starlibard</p>
+                    </div>
+                    <div class="follow-hint">Add Me</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contact-card glass-section cyber-scan reveal" data-tilt>
+                <div class="hub-bg-overlay"></div>
+                <div class="card-glow"></div>
+                <h2 class="section-title">GAMER <span>HUB</span></h2>
+                <div class="hub-content">
+                    <div class="hub-icon-wrapper">
+                        <img src="d4u_logo.jpg" alt="D4U" class="hub-main-pfp">
+                    </div>
+                    <div class="hub-text">
+                        <h3>D4U UNITED</h3>
+                        <p>Unlock the full experience. Join our official Discord community for squad finding, anime
+                            discussions, and exclusive giveaways.</p>
+                        <a href="https://discord.gg/KHxSxjsAve" target="_blank" class="btn btn-premium">ENTER SERVER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RivuPlayz. All Rights Reserved. Designed with ❤️ for Gamers.</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <span class="cookie-title">CYBER PROTOCOL ACTIVATED</span>
+            <p>Our operational base uses biometric cookies to enhance your gaming experience. Accessing this sector
+                implies agreement with our <a href="#">privacy directives</a>.</p>
+        </div>
+        <button id="accept-cookies" class="btn btn-premium mini">INITIALIZE ACCESS</button>
+    </div>
+
+    <!-- Bottom Mobile HUD -->
+    <div class="mobile-hud">
+        <a href="#home" class="hud-btn" title="Home">
+            <span class="hud-icon">🏠</span>
+        </a>
+        <a href="#about" class="hud-btn" title="About">
+            <span class="hud-icon">👤</span>
+        </a>
+        <a href="#games" class="hud-btn" title="Games">
+            <span class="hud-icon">🎮</span>
+        </a>
+        <a href="#social" class="hud-btn" title="Social">
+            <span class="hud-icon">🌐</span>
+        </a>
+    </div>
+
+    <!-- Redirection Overlay -->
+    <div class="redirection-overlay" id="redirectionOverlay">
+        <div class="protocol-loader">
+            <div class="protocol-bar"></div>
+        </div>
+        <div class="protocol-text">ESTABLISHING SECURE LINK...</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
