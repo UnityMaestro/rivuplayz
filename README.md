@@ -29,7 +29,7 @@ Welcome to the official repository for **RivuPlayz**—a premium, high-performan
 - **Graphics:** HTML5 Canvas API
 - **Libraries:** [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
 - **Typography:** Outfit (Google Fonts)
-
+"[!TIP] Pro Tip: If you're using an iOS device, make sure to grant "Motion and Orientation" permissions when prompted to enable the gyroscope-based tilt effects!"
 ## 📁 Project Structure
 
 ```text
@@ -41,4 +41,6 @@ RIVUGAME/
 └── pfp_*.jpg         # Social profile media
 
 
-"[!TIP] Pro Tip: If you're using an iOS device, make sure to grant "Motion and Orientation" permissions when prompted to enable the gyroscope-based tilt effects!"
+
+
+
