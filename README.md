@@ -2,7 +2,7 @@
 
 Welcome to the official repository for **RivuPlayz**—a premium, high-performance gaming portfolio designed with a futuristic "Cyber-Glass" aesthetic. This project showcases gaming achievements, IDs, and social footprints in a highly interactive environment.
 
-![Preview](ai_brand_logo.png)
+
 
 ## ✨ Features
 
