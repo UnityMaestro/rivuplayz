@@ -39,3 +39,6 @@ RIVUGAME/
 ├── script.js        # Particles, animations, and secret protocols
 ├── ai_*.png          # Themed assets for different games
 └── pfp_*.jpg         # Social profile media
+
+
+"[!TIP] Pro Tip: If you're using an iOS device, make sure to grant "Motion and Orientation" permissions when prompted to enable the gyroscope-based tilt effects!"
